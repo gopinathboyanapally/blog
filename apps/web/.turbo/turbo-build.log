@@ -1,0 +1,55 @@
+
+
+> web@0.1.0 build /Users/gboyanapally/Desktop/vercel-academy-foundation/apps/web
+> next build
+
+   [1m[38;2;173;127;168m▲ Next.js 15.4.6[39m[22m
+
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully in 2000ms
+[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G[?25h [37m[1m [22m[39m Linting and checking validity of types     [32m[1m✓[22m[39m Linting and checking validity of types 
+[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m...[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data     [32m[1m✓[22m[39m Collecting page data 
+[?25l [37m[1m [22m[39m Generating static pages (0/5)  [36m[    ][39m[2K[1G [37m[1m [22m[39m Generating static pages (0/5)  [36m[=   ][39m[2K[1G [37m[1m [22m[39m Generating static pages (0/5)  [36m[==  ][39m[2K[1G [37m[1m [22m[39m Generating static pages (0/5)  [36m[=== ][39m[2K[1G [37m[1m [22m[39m Generating static pages (4/5)  [36m[ ===][39m[2K[1G [37m[1m [22m[39m Generating static pages (4/5)  [36m[  ==][39m[2K[1G[?25hContact Info: {
+  email: 'Sincere48@company.com',
+  phone: '(796) 363-2537 x380',
+  address: {
+    street: '375 Hortense Shore',
+    city: 'South Archchester',
+    state: 'Alaska',
+    country: 'United States',
+    zipCode: '65056'
+  },
+  socialMedia: {
+    twitter: 'https://twitter.com/company',
+    linkedin: 'https://linkedin.com/company/company',
+    facebook: 'https://facebook.com/company',
+    instagram: 'https://instagram.com/company',
+    youtube: 'https://youtube.com/company',
+    github: 'https://github.com/company'
+  },
+  businessHours: {
+    monday: { open: '09:00', close: '18:00' },
+    tuesday: { open: '09:00', close: '18:00' },
+    wednesday: { open: '09:00', close: '18:00' },
+    thursday: { open: '09:00', close: '18:00' },
+    friday: { open: '09:00', close: '17:00' },
+    saturday: 'closed',
+    sunday: 'closed'
+  }
+}
+[?25h [32m[1m✓[22m[39m Generating static pages (5/5)
+[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[?25l [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Collecting build traces     [32m[1m✓[22m[39m Collecting build traces 
+[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization     [32m[1m✓[22m[39m Finalizing page optimization 
+
+[4mRoute (app)[24m                                 [4mSize[24m  [4mFirst Load JS[24m  [4m[24m  [4m[24m
+┌ ○ /                                      121 B         [37m[1m100 kB[22m[39m
+└ ○ /_not-found                            992 B         [37m[1m101 kB[22m[39m
++ First Load JS shared by all             [37m[1m100 kB[22m[39m
+  ├ chunks/274-afa05ab8e0973f79.js       44.1 kB
+  ├ chunks/fb521855-360f788827d72256.js  54.1 kB
+  └ other shared chunks (total)          1.89 kB
+
+
+○  (Static)  prerendered as static content
+
+[?25h
