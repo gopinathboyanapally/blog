@@ -156,6 +156,7 @@ export async function fetchPostBySlug(slug: string): Promise<BlogPost | null> {
   // If not found, generate a new post with the given slug
   if (!post) {
     return generateBlogPost({ slug });
+    // return null;
   }
 
   return post;
