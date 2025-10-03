@@ -2,17 +2,19 @@ import { fetchPosts } from '@repo/api/blog';
 import { Clock, Eye, Heart } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import type { JSX } from 'react';
 import CategoryLink from '../blog/components/category-link';
 import Pagination from './components/pagination';
+
+type Search = { page?: string };
 
 export default async function AllPostsPage({
   searchParams,
 }: {
-  searchParams?: { page?: string };
-}) {
+  searchParams: Promise<Search>;
+}): Promise<JSX.Element> {
   const pageSize = 9;
-  const page = Math.max(1, Number(searchParams?.page) || 1);
+  const page = Math.max(1, Number((await searchParams)?.page) || 1);
 
   const posts = await fetchPosts(pageSize, page);
   const totalPages = 10;

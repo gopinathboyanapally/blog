@@ -2,7 +2,7 @@ import { fetchPostsByCategory } from '@repo/api/blog';
 import { ArrowLeft, Clock, Eye, Heart } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import type { JSX } from 'react';
 import {
   Accordion,
   AccordionContent,
@@ -14,7 +14,7 @@ export default async function BlogPage({
   params,
 }: {
   params: { slug: string };
-}) {
+}): Promise<JSX.Element> {
   const { slug } = await params;
   const categories = await fetchPostsByCategory(slug, 10);
 

@@ -1,8 +1,8 @@
-// import { SiteHeader } from '@/components/sitewide-header';
 /** biome-ignore-all lint/style/noNonNullAssertion: <explanation> */
 import { HeroSection } from '@/components/hero';
 
 export default function HomePage() {
+  // console.log(process.env.NODE_ENV);
   return (
     <main className="flex flex-col gap-4">
       <HeroSection />

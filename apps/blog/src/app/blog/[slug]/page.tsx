@@ -7,14 +7,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-type PageParams = { slug: string };
+type PageParams = Promise<{
+  slug: string;
+}>;
 
 export async function generateMetadata({
   params,
 }: {
   params: PageParams;
 }): Promise<Metadata> {
-  const post = await fetchPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = await fetchPostBySlug(slug);
 
   if (!post) {
     return {
@@ -59,7 +62,7 @@ export async function generateMetadata({
 }
 
 export default async function Page({ params }: { params: PageParams }) {
-  const { slug } = params;
+  const { slug } = await params;
   const post = await fetchPostBySlug(slug);
 
   if (!post) {
