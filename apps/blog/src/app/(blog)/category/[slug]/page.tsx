@@ -10,10 +10,13 @@ import {
   AccordionTrigger,
 } from '../../../../components/ui/accordion';
 
+type PageParams = Promise<{
+  slug: string;
+}>;
 export default async function BlogPage({
   params,
 }: {
-  params: { slug: string };
+  params: PageParams;
 }): Promise<JSX.Element> {
   const { slug } = await params;
   const categories = await fetchPostsByCategory(slug, 10);
