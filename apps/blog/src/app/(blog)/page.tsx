@@ -3,7 +3,7 @@ import { Clock, Eye, Heart } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { JSX } from 'react';
-import CategoryLink from '../blog/components/category-link';
+import CategoryLink from './components/category-link';
 import Pagination from './components/pagination';
 
 type Search = { page?: string };
@@ -53,7 +53,7 @@ export default async function AllPostsPage({
           <div key={post.id}>
             <Link
               className="group block overflow-hidden rounded-lg border border-border bg-card transition-all duration-300 hover:border-primary/50"
-              href={`/blog/${post.slug}`}
+              href={`/${post.slug}`}
               key={post.id}
             >
               <div className="relative aspect-[4/3] aspect-video overflow-hidden bg-muted">

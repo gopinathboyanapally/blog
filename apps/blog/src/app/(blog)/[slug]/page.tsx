@@ -75,7 +75,7 @@ export default async function Page({ params }: { params: PageParams }) {
         <div className="container mx-auto max-w-4xl px-4 py-4">
           <Link
             className="inline-flex items-center gap-2 text-muted-foreground text-sm transition-colors hover:text-foreground"
-            href="/blog"
+            href="/"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Blog
@@ -86,7 +86,7 @@ export default async function Page({ params }: { params: PageParams }) {
       <div className="border-border border-b">
         <div className="container mx-auto max-w-4xl px-4 py-12">
           <div className="mb-6">
-            <Link href={`/blog/category/${post.category}`}>
+            <Link href={`/category/${post.category}`}>
               <span className="mb-4 inline-block rounded-full bg-primary/10 px-3 py-1 font-medium text-primary text-xs">
                 {post.category}
               </span>

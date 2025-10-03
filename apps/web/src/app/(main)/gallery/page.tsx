@@ -1,8 +1,6 @@
 import { fetchGalleryItems } from '@repo/api/brand';
 import Image from 'next/image';
 
-// import { Card } from "@/components/ui/card"
-
 export default async function GallerySection() {
   const galleryItems = await fetchGalleryItems(9);
 

@@ -25,7 +25,7 @@ export default async function BlogPage({
           <div className="container max-w-4xl px-4 py-4">
             <Link
               className="items-left inline-flex gap-2 text-muted-foreground text-sm transition-colors hover:text-foreground"
-              href="/blog"
+              href="/"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Blog
