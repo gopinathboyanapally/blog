@@ -40,12 +40,15 @@ export default async function AllPostsPage({
               href={`/blog/${post.slug}`}
               key={post.id}
             >
-              <div className="relative aspect-video overflow-hidden bg-muted">
+              <div className="relative aspect-[4/3] aspect-video overflow-hidden bg-muted">
                 <Image
                   alt={post.title}
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   fill
+                  // height={600}
+                  sizes="(min-width: 768px) 100vw, 33vw"
                   src={post.coverImage || '/placeholder.svg'}
+                  // width={500}
                 />
               </div>
             </Link>
@@ -71,7 +74,7 @@ export default async function AllPostsPage({
                 </p>
 
                 <div className="flex items-center justify-between border-border border-t pt-4">
-                  <div className="flex items-center gap-2">
+                  <div className="relative flex items-center gap-2">
                     <Image
                       alt={post.author.name}
                       className="rounded-full"

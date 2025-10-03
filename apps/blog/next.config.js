@@ -23,6 +23,7 @@ const nextConfig = {
         hostname: 'cdn.jsdelivr.net',
       },
     ],
+    minimumCacheTTL: 60 * 60 * 24 * 7, // 7 days
   },
 };
 
