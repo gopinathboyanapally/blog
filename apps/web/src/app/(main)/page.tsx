@@ -1,15 +1,13 @@
 /** biome-ignore-all lint/style/noNonNullAssertion: <explanation> */
-
-// import Link from 'next/link';
 import { HeroSection } from '@/components/hero';
 
 export default function HomePage() {
+  // console.log(process.env.NODE_ENV);
   return (
     <main className="flex flex-col gap-4">
       <HeroSection />
       <a
-        className="text-muted-foreground text-sm transition-colors hover:text-primary"
-        href="/blog"
+        href={process.env.NEXT_PUBLIC_BLOG_URL!}
         style={{
           margin: '30px auto',
           marginBottom: '50px',
@@ -19,7 +17,7 @@ export default function HomePage() {
           borderRadius: '8px',
         }}
       >
-        <span>CHECK OUT OUR BLOG POSTS!</span>
+        <b>CHECK OUT OUR BLOG POSTS!</b>
       </a>
     </main>
   );

@@ -123,7 +123,7 @@ export default async function AllPostsPage({
           </div>
         ))}
       </div>
-      <Pagination basePath="/blog" page={page} totalPages={totalPages} />
+      <Pagination basePath="/" page={page} totalPages={totalPages} />
     </div>
   );
 }

@@ -19,7 +19,8 @@ export default async function BlogPage({
   params: PageParams;
 }): Promise<JSX.Element> {
   const { slug } = await params;
-  const categories = await fetchPostsByCategory(slug, 10);
+  const decodedSlug = decodeURIComponent(slug);
+  const categories = await fetchPostsByCategory(decodedSlug, 10);
 
   return (
     <div className="min-h-screen bg-background">
@@ -36,7 +37,7 @@ export default async function BlogPage({
           </div>
         </header>
         <div className="container mx-auto max-w-7xl px-4 py-6">
-          <h1 className="mb-2 font-bold text-4xl">{slug}</h1>
+          <h1 className="mb-2 font-bold text-4xl">{decodedSlug}</h1>
           <p className="text-muted-foreground">
             Insights, tutorials, and updates from our team
           </p>
