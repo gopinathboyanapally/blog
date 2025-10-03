@@ -21,6 +21,22 @@ export default async function AllPostsPage({
 
   return (
     <div className="min-h-screen bg-background">
+      <div className="mx-auto px-4 py-4">
+        <a
+          // biome-ignore lint/style/noNonNullAssertion: <explanation>
+          href={process.env.NEXT_PUBLIC_WEB_URL!}
+          style={{
+            margin: '30px auto',
+            marginBottom: '50px',
+            padding: '12px',
+            backgroundColor: 'white',
+            color: '#000',
+            borderRadius: '8px',
+          }}
+        >
+          <b>HOMEPAGE</b>
+        </a>
+      </div>
       <div className="border-border border-b">
         <div className="container mx-auto px-4 py-12">
           <h1 className="mb-4 font-bold text-4xl text-foreground">
