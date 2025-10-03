@@ -1,6 +1,6 @@
 // app/blog/[slug]/page.tsx
 
-import { fetchPostBySlug } from '@repo/api/blog';
+import { fetchPostBySlug, fetchPosts } from '@repo/api/blog';
 import { ArrowLeft, Calendar, Clock, Eye, Heart } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
@@ -59,6 +59,17 @@ export async function generateMetadata({
       images: [ogImageUrl], // absolute url
     },
   };
+}
+
+export const revalidate = 60;
+
+export async function generateStaticParams() {
+  const pageSize = 9;
+  const posts = await fetchPosts(pageSize, 0);
+
+  return posts.map((post) => {
+    return { slug: post.slug };
+  });
 }
 
 export default async function Page({ params }: { params: PageParams }) {

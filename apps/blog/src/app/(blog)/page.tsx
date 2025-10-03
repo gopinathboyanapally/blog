@@ -62,7 +62,7 @@ export default async function AllPostsPage({
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   fill
                   // height={600}
-                  sizes="(min-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   src={post.coverImage || '/placeholder.svg'}
                   // width={500}
                 />
